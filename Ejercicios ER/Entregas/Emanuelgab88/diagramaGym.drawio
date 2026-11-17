@@ -1,0 +1,156 @@
+<mxfile host="Electron">
+  <diagram name="Gimnasio" id="gym">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ================= MODELO RELACIONAL ================= -->
+
+        <!-- SOCIOS -->
+        <mxCell id="so_h" value="SOCIOS" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="0" y="0" width="210" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_k1" value="PK" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="0" y="30" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_id_socio" value="id_socio" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="30" y="30" width="110" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_t1" value="SERIAL" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="140" y="30" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_k2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="0" y="60" width="30" height="120" as="geometry" /></mxCell>
+        <mxCell id="so_n2" value="dni" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="30" y="60" width="110" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_t2" value="VARCHAR" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="140" y="60" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_n3" value="nombre" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="30" y="90" width="110" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_t3" value="VARCHAR" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="140" y="90" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_n4" value="email" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="30" y="120" width="110" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_t4" value="VARCHAR" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="140" y="120" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_n5" value="telefono" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="30" y="150" width="110" height="30" as="geometry" /></mxCell>
+        <mxCell id="so_t5" value="VARCHAR" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="140" y="150" width="70" height="30" as="geometry" /></mxCell>
+
+        <!-- RESERVAS -->
+        <mxCell id="re_h" value="RESERVAS" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="300" y="0" width="210" height="30" as="geometry" /></mxCell>
+        <mxCell id="re_k1" value="PK" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="300" y="30" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="re_id_reserva" value="id_reserva" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="330" y="30" width="110" height="30" as="geometry" /></mxCell>
+        <mxCell id="re_t1" value="SERIAL" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="440" y="30" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="re_k2" value="FK" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="300" y="60" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="re_id_clase" value="id_clase" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="330" y="60" width="110" height="30" as="geometry" /></mxCell>
+        <mxCell id="re_t2" value="INT" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="440" y="60" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="re_k3" value="FK" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="300" y="90" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="re_id_socio" value="id_socio" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="330" y="90" width="110" height="30" as="geometry" /></mxCell>
+        <mxCell id="re_t3" value="INT" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="440" y="90" width="70" height="30" as="geometry" /></mxCell>
+
+        <!-- CLASES -->
+        <mxCell id="cl_h" value="CLASES" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="570" y="20" width="220" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_k1" value="PK" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="570" y="50" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_id_clase" value="id_clase" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="600" y="50" width="120" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_t1" value="SERIAL" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="720" y="50" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_k2" value="FK" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="570" y="80" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_id_entrenador" value="id_entrenador" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="600" y="80" width="120" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_t2" value="INT" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="720" y="80" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_k3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="570" y="110" width="30" height="120" as="geometry" /></mxCell>
+        <mxCell id="cl_n3" value="nombre" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="600" y="110" width="120" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_t3" value="VARCHAR" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="720" y="110" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_n4" value="fecha" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="600" y="140" width="120" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_t4" value="DATE" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="720" y="140" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_n5" value="horario" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="600" y="170" width="120" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_t5" value="TIME" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="720" y="170" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_n6" value="capacidad_maxima" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="600" y="200" width="120" height="30" as="geometry" /></mxCell>
+        <mxCell id="cl_t6" value="INT" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="720" y="200" width="70" height="30" as="geometry" /></mxCell>
+
+        <!-- ESPECIALIDADES -->
+        <mxCell id="es_h" value="ESPECIALIDADES" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="0" y="200" width="210" height="30" as="geometry" /></mxCell>
+        <mxCell id="es_k1" value="PK" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="0" y="230" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="es_id_especialidad" value="id_especialidad" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="30" y="230" width="110" height="30" as="geometry" /></mxCell>
+        <mxCell id="es_t1" value="SERIAL" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="140" y="230" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="es_k2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="0" y="260" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="es_n2" value="nombre" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="30" y="260" width="110" height="30" as="geometry" /></mxCell>
+        <mxCell id="es_t2" value="VARCHAR" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="140" y="260" width="70" height="30" as="geometry" /></mxCell>
+
+        <!-- ENTRENADORES -->
+        <mxCell id="en_h" value="ENTRENADORES" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="290" y="190" width="220" height="30" as="geometry" /></mxCell>
+        <mxCell id="en_k1" value="PK" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="290" y="220" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="en_id_entrenador" value="id_entrenador" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="320" y="220" width="120" height="30" as="geometry" /></mxCell>
+        <mxCell id="en_t1" value="SERIAL" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="440" y="220" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="en_k2" value="FK" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="290" y="250" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="en_id_especialidad" value="id_especialidad" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="320" y="250" width="120" height="30" as="geometry" /></mxCell>
+        <mxCell id="en_t2" value="INT" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="1"><mxGeometry x="440" y="250" width="70" height="30" as="geometry" /></mxCell>
+        <mxCell id="en_k3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="290" y="280" width="30" height="30" as="geometry" /></mxCell>
+        <mxCell id="en_n3" value="nombre" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="320" y="280" width="120" height="30" as="geometry" /></mxCell>
+        <mxCell id="en_t3" value="VARCHAR" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" vertex="1" parent="1"><mxGeometry x="440" y="280" width="70" height="30" as="geometry" /></mxCell>
+
+        <!-- Relaciones del modelo relacional -->
+        <mxCell id="rel1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERmany;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="so_t1" target="re_k3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="rel2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmany;startFill=0;endArrow=ERmandOne;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="re_t2" target="cl_k1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="rel3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERmandOne;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="en_t1" target="cl_k2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="rel4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmany;startFill=0;endArrow=ERmany;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="es_t1" target="en_k2"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ================= DIAGRAMA ENTIDAD-RELACIÓN ================= -->
+
+        <!-- Entidades -->
+        <mxCell id="E_socios" value="SOCIOS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="150" y="430" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="E_reservas" value="RESERVAS" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="450" y="430" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="E_clases" value="CLASES" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="750" y="430" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="E_esp" value="ESPECIALIDADES" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="290" y="610" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="E_entr" value="ENTRENADORES" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="590" y="610" width="110" height="40" as="geometry" /></mxCell>
+
+        <!-- Relaciones -->
+        <mxCell id="R_realizan" value="Realizan" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="290" y="420" width="120" height="60" as="geometry" /></mxCell>
+        <mxCell id="R_tienen" value="Tienen" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="590" y="420" width="120" height="60" as="geometry" /></mxCell>
+        <mxCell id="R_conocen" value="Conocen" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="440" y="600" width="120" height="60" as="geometry" /></mxCell>
+        <mxCell id="R_imparten" value="Imparten" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="740" y="600" width="120" height="60" as="geometry" /></mxCell>
+
+        <mxCell id="lr1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startFill=0;endArrow=none;" edge="1" parent="1" source="E_socios" target="R_realizan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="lr2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="R_realizan" target="E_reservas"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="lr3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmany;startFill=0;endArrow=none;" edge="1" parent="1" source="E_reservas" target="R_tienen"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="lr4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" edge="1" parent="1" source="R_tienen" target="E_clases"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="lr5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" edge="1" parent="1" source="E_esp" target="R_conocen"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="lr6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="R_conocen" target="E_entr"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="lr7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;startFill=0;endArrow=none;" edge="1" parent="1" source="E_entr" target="R_imparten"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="lr8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;endFill=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="R_imparten" target="E_clases"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Atributos de SOCIOS -->
+        <mxCell id="a_so_dni" value="dni" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="10" y="350" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_so_id" value="id_socio" style="ellipse;whiteSpace=wrap;html=1;fontStyle=4;" vertex="1" parent="1"><mxGeometry x="150" y="350" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_so_nom" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="10" y="430" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_so_email" value="email" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="10" y="510" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_so_tel" value="telefono" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="150" y="510" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="la1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.25;" edge="1" parent="1" source="a_so_dni" target="E_socios"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="a_so_id" target="E_socios"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="a_so_nom" target="E_socios"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.75;" edge="1" parent="1" source="a_so_email" target="E_socios"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="a_so_tel" target="E_socios"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Atributos de RESERVAS -->
+        <mxCell id="a_re_id" value="id_reserva" style="ellipse;whiteSpace=wrap;html=1;fontStyle=4;" vertex="1" parent="1"><mxGeometry x="450" y="350" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_re_cl" value="&lt;span style=&quot;border-bottom: 1px dotted;&quot;&gt;id_clase&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="390" y="510" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_re_so" value="&lt;span style=&quot;border-bottom: 1px dotted;&quot;&gt;id_socio&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="510" y="510" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="la6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="a_re_id" target="E_reservas"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.35;entryY=1;" edge="1" parent="1" source="a_re_cl" target="E_reservas"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.65;entryY=1;" edge="1" parent="1" source="a_re_so" target="E_reservas"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Atributos de CLASES -->
+        <mxCell id="a_cl_id" value="id_clase" style="ellipse;whiteSpace=wrap;html=1;fontStyle=4;" vertex="1" parent="1"><mxGeometry x="670" y="350" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_cl_en" value="&lt;span style=&quot;border-bottom: 1px dotted;&quot;&gt;id_entrenador&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="810" y="350" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_cl_nom" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="910" y="400" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_cl_fe" value="fecha" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="910" y="460" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_cl_cap" value="capacidad_maxima" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="670" y="510" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_cl_hor" value="horario" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="810" y="510" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="la9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.25;entryY=0;" edge="1" parent="1" source="a_cl_id" target="E_clases"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.75;entryY=0;" edge="1" parent="1" source="a_cl_en" target="E_clases"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.25;" edge="1" parent="1" source="a_cl_nom" target="E_clases"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.75;" edge="1" parent="1" source="a_cl_fe" target="E_clases"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.25;entryY=1;" edge="1" parent="1" source="a_cl_cap" target="E_clases"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.75;entryY=1;" edge="1" parent="1" source="a_cl_hor" target="E_clases"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Atributos de ESPECIALIDADES -->
+        <mxCell id="a_es_id" value="id_especialidad" style="ellipse;whiteSpace=wrap;html=1;fontStyle=4;" vertex="1" parent="1"><mxGeometry x="160" y="610" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_es_nom" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="295" y="680" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="la15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;" edge="1" parent="1" source="a_es_id" target="E_esp"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="a_es_nom" target="E_esp"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Atributos de ENTRENADORES -->
+        <mxCell id="a_en_nom" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="595" y="540" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_en_id" value="id_entrenador" style="ellipse;whiteSpace=wrap;html=1;fontStyle=4;" vertex="1" parent="1"><mxGeometry x="550" y="670" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="a_en_es" value="&lt;span style=&quot;border-bottom: 1px dotted;&quot;&gt;id_especialidad&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="660" y="670" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="la17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="a_en_nom" target="E_entr"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=1;" edge="1" parent="1" source="a_en_id" target="E_entr"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="la19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.75;entryY=1;" edge="1" parent="1" source="a_en_es" target="E_entr"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
